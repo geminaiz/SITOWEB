@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+ <!-- MENU' IN ALTO-->
+ <header class="header">
+  <div class="header__content">
+    <a class="header__logo" href="index.html">
+      <h3><strong>EchoVerse Productions</strong></h3>
+    </a>
+    <ul class="header__menu">
+      <li><a class='nav__button' href="chisiamo.html">Chi siamo</a></li>
+      <li><a class='nav__button' href="artisti.html">Artisti</a></li>
+      <li><a class='nav__button' href="rilasci.html">Rilasci</a></li>
+      <li><a class='nav__button' href="contatti.html">Contatti</a></li>
+    </ul>
+    <div class="header__quick">
+      <strong><a href="login.php">Login</a></strong>
+      <div class="icon-hamburger" id="menuButton">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <ul class="toggable__menu" id="toggableMenu">
+    <li><a class='nav__button' href="chisiamo.html">Chi siamo</a></li>
+    <li><a class='nav__button' href="artisti.html">Artisti</a></li>
+    <li><a class='nav__button' href="rilasci.html">Rilasci</a></li>
+    <li><a class='nav__button' href="contatti.html">Contatti</a></li>
+  </ul>
+</header>
+<!-- MENU' IN ALTO-->
+
+<div class="cover" style="background-image:linear-gradient(to bottom, rgba(238, 49, 238, 0.39), rgba(0,0,0,0.6)), url('sfondisecondari/sfondosecondario1.jpg');">
+    <div class="cover__content">
+      <div class="section watch fade-in">
+        <strong><h1>I nostri artisti</h1></strong>
+    </div>
+</div>
+</div>
+
+
+<!-- CONTENUTO PAGINA-->
+<div class="cover" style="background-image:linear-gradient(to bottom, rgba(5, 5, 5, 0.219), rgba(0,0,0,0.6)), url('coversecondarie/foto5.jpg');">
+  <div class="cover__content">
+    <div class="section watch fade-in">
+      <div id="artistContainer" class="grid pt-4"></div>
+    </div>
+  </div>
+</div>
+  <!-- CONTENUTO PAGINA-->
+
+  <center>
+    <!--FOOTER-->
+  <div class="section watch fade-in">
+    <footer class="footer">
+      <div class="container">
+        <p class="title">© 2023 EchoVerse Productions. Tutti i diritti sono riservati.</p>
+        <ul>
+          <li><a href="termini.html">Termini di servizio</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+    <!--FOOTER-->
+</center>
+
+        
+      <!--JAVASCRIPT = SCORRIMENTO PAGINE-->
+      <script type="text/javascript" src="animazioni.js"></script>
+      <!--JAVASCRIPT-->
+
+      <!--JAVASCRIPT = ARTISTI-->
+      <script type="text/javascript" src="./artisti.js"></script>
+      <!--JAVASCRIPT-->
+
+      <!--JAVASCRIPT = BOTTONE MENU-->
+      <script type="text/javascript" src="menu-button.js"></script>
+      <!--JAVASCRIPT-->
+</body>
+</html>

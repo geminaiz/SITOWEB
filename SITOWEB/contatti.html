@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!--STILE FORM CONTATTI -->
+    <style> 
+    .login-box {
+    width: 300px;
+    padding: 20px;
+    background-color: #f9f2f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    animation: slide-in 0.5s forwards;
+    margin: 0 auto;
+    }
+
+  .login-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #820786;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #820786;
+  }
+
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 3px;
+    border: 1px solid #e7d7e7;
+    color: #131213;
+  }
+
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 3px;
+    border: 1px solid #e7d7e7;
+    color: #131213;
+  }
+
+  .form-group .button {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    color: #f9f2f9;
+    background-color: #820786;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  .form-group button:hover {
+    background-color: #67056f;
+  }
+  </style>
+  <!--STILE FORM CONTATTI -->
+
+</head>
+<body>
+ <!-- MENU' IN ALTO-->
+ <header class="header">
+  <div class="header__content">
+    <a class="header__logo" href="index.html">
+      <h3><strong>EchoVerse Productions</strong></h3>
+    </a>
+    <ul class="header__menu">
+      <li><a class='nav__button' href="chisiamo.html">Chi siamo</a></li>
+      <li><a class='nav__button' href="artisti.html">Artisti</a></li>
+      <li><a class='nav__button' href="rilasci.html">Rilasci</a></li>
+      <li><a class='nav__button' href="contatti.html">Contatti</a></li>
+    </ul>
+    <div class="header__quick">
+      <strong><a href="login.php">Login</a></strong>
+      <div class="icon-hamburger" id="menuButton">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <ul class="toggable__menu" id="toggableMenu">
+    <li><a class='nav__button' href="chisiamo.html">Chi siamo</a></li>
+    <li><a class='nav__button' href="artisti.html">Artisti</a></li>
+    <li><a class='nav__button' href="rilasci.html">Rilasci</a></li>
+    <li><a class='nav__button' href="contatti.html">Contatti</a></li>
+  </ul>
+</header>
+<!-- MENU' IN ALTO-->
+
+
+<!-- CONTENUTO PAGINA-->
+<div class="cover" style="background-image:linear-gradient(to bottom, rgba(238, 49, 238, 0.39), rgba(0,0,0,0.6)), url('sfondisecondari/sfondosecondario1.jpg');">
+    <div class="cover__content">
+      <div class="section watch fade-in">
+        <strong><h1 style="color:#e7d7e7; display:flex; justify-content:center;">Contattaci</h1></strong> <br><br>
+          <div class="login-box">
+            <h2>Contattaci</h2>
+            <form method="POST" action="send_email.php">
+              <div class="form-group">
+                <label for="username">Nome</label>
+                <input type="text" name="name" id="name" placeholder="nome.." required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="email.." required>
+              </div>
+              <div class="form-group">
+                <label for="message">Messaggio</label>
+                <textarea id="message" name="message" placeholder="Inserisci il tuo messaggio.." required></textarea>
+              </div>
+              <div class="form-group">
+                <input type="submit" value="invia" class="button">
+              </div>
+            </form>
+          </div>
+      </div>
+    </div>
+</div>
+</div>
+
+<!-- CONTENUTO PAGINA-->
+
+</body>
+
+<center>
+  <!--FOOTER-->
+<div class="section watch fade-in">
+  <footer class="footer">
+    <div class="container">
+      <p class="title">© 2023 EchoVerse Productions. Tutti i diritti sono riservati.</p>
+      <ul>
+        <li><a href="termini.html">Termini di servizio</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </footer>
+</div>
+  <!--FOOTER-->
+</center>
+
+        
+      <!--JAVASCRIPT = SCORRIMENTO PAGINE-->
+      <script type="text/javascript" src="animazioni.js"></script>
+      <!--JAVASCRIPT-->
+      
+      <!--JAVASCRIPT = BOTTONE MENU-->
+      <script type="text/javascript" src="menu-button.js"></script>
+      <!--JAVASCRIPT-->
+</html>
